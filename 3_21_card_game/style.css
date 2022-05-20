@@ -6,21 +6,22 @@ body {
     background-position: center;
     background-position-y: top;
     background-color: #171415;
-    }
+
+}
 
 h2 {
     color: white;
 }
 
 #dealer-cards img {
-    height: 175px; 
-    width: 125px;
+    height: 140px; 
+    width: 110px;
     margin: 1px;
 }
 
 #your-cards img {
-    height: 175px; 
-    width: 125px;
+    height: 140px; 
+    width: 110px;
     margin: 1px;
 }
 
@@ -46,9 +47,24 @@ h2 {
     font-size: 42px;
 }
 
-.footer {
-    float: right;
-    float: b;
-    margin-right: 100px;
+.head {
+    margin-top: 20px;
+}
+
+.main {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin-top: 300px;
+    justify-content: center;
     
+}
+
+.card {
+    position: absolute;
+}
+
+.result {
+    position: absolute;
+    right: 80px;
 }
