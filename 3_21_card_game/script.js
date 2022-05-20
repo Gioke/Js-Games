@@ -38,13 +38,8 @@ function shuffleDeck() {
 }
 
 function startGame() {
-    hidden = deck.pop();
-    dealerSum += getValue(hidden);
-    dealerAceCount += checkAce(hidden);
-    // console.log(hidden);
-    // console.log(dealerSum);
-    while (dealerSum < 17) {
-        //img
+    
+    for (let i = 0; i < 2; i++) {
         let cardImg = document.createElement("img");
         let card = deck.pop();
         cardImg.src = "./cards/" + card + ".png";
@@ -89,9 +84,19 @@ function hit() {
 function stay() {
     dealerSum = reduceAce(dealerSum, dealerAceCount);
     yourSum = reduceAce(yourSum, yourAceCount);
+    while (dealerSum < 17) {
+            let cardImg = document.createElement("img");
+            let card = deck.pop();
+            cardImg.src = "./cards/" + card + ".png";
+            dealerSum += getValue(card);
+            dealerAceCount += checkAce(card);
+            document.getElementById("dealer-cards").append(cardImg);
+        }
+    
+    document.getElementById('hidden').style.visibility="hidden"
+
 
     canhit = false;
-    document.getElementById("hidden").src = "./cards/" + hidden + ".png";
 
     let message = "";
     if (yourSum > 21) {
