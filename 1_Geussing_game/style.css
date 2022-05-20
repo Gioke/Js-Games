@@ -1,0 +1,33 @@
+body{   
+    background-color: #333232;
+}
+
+p{
+    color: White;
+    font-size: 24px;
+}
+
+#container{
+    position: relative;
+    background-color: #0E2431;
+    border: 5px solid #f5e4c3;
+    height: 275px;
+    width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+#input{
+    width: 100px;
+    margin: 25px auto;
+}
+
+#btn{
+    margin: 25px auto auto 5px;
+}
+
+.restart-btn {
+    position: absolute;
+    bottom: 40px;
+    right: 350px;
+}

@@ -1,0 +1,54 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    background-image: url("blackjack-layout-1-black.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+    background-color: #171415;
+    }
+
+h2 {
+    color: white;
+}
+
+#dealer-cards img {
+    height: 175px; 
+    width: 125px;
+    margin: 1px;
+}
+
+#your-cards img {
+    height: 175px; 
+    width: 125px;
+    margin: 1px;
+}
+
+#hit {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#stay {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#hidden {
+    height: 175px; 
+    width: 125px;
+}
+
+#results {
+    color: white;
+    font-size: 42px;
+}
+
+.footer {
+    float: right;
+    float: b;
+    margin-right: 100px;
+    
+}
