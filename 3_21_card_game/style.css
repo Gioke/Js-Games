@@ -61,7 +61,7 @@ h2 {
     height: 25px;
     background-color: darkorange;
     cursor: pointer;
-    margin-top: 25px;
+    margin-top: 5px;
 }
 
 .restart-btn:hover {
@@ -70,7 +70,7 @@ h2 {
 
 #results {
     color: white;
-    font-size: 42px;
+    font-size: 2rem;
 }
 
 .head {
@@ -93,4 +93,5 @@ h2 {
 .result {
     position: absolute;
     right: 200px;
+    bottom: 5px;
 }
