@@ -15,7 +15,7 @@ window.onload = function() {
     startGame();
 }
 
-function buildDeck() {
+const buildDeck = () => {
     let values = ['2','3','4','5','6','7','8','9','10','J','Q','K','A'];
     let types = ['H','C','D','S'];
     deck = [];
@@ -27,7 +27,7 @@ function buildDeck() {
     }   
 }
 
-function shuffleDeck() {
+const shuffleDeck = () => {
     for (let i = deck.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * i);
         let temp = deck[i];
@@ -37,7 +37,7 @@ function shuffleDeck() {
     console.log(deck);
 }
 
-function startGame() {
+const startGame = () => {
     
     for (let i = 0; i < 2; i++) {
         let cardImg = document.createElement("img");
@@ -64,7 +64,7 @@ function startGame() {
 
 }
 
-function hit() {
+const hit = () => {
     if (!canhit) {
         return;
     }
@@ -81,7 +81,7 @@ function hit() {
     }
 }
 
-function stay() {
+const stay = () => {
     dealerSum = reduceAce(dealerSum, dealerAceCount);
     yourSum = reduceAce(yourSum, yourAceCount);
     while (dealerSum < 17) {
@@ -119,7 +119,7 @@ function stay() {
     document.getElementById("results").innerText = message;
 }
 
-function getValue(card) {
+const getValue = (card) => {
     let data = card.split("-");
     let value = data[0];
 
@@ -139,7 +139,7 @@ function checkAce(card) {
     return 0;
 }
 
-function reduceAce(playerSum, playerAceCount) {
+const reduceAce = (playerSum, playerAceCount) => {
     while (playerSum > 21 && playerAceCount > 0) {
         playerSum -= 10;
         playerAceCount -= 1;
