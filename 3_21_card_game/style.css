@@ -29,17 +29,43 @@ h2 {
     width: 100px;
     height: 50px;
     font-size: 20px;
+    border-radius: 10%;
+    background-color: darkorange;
+    cursor: pointer;
+}
+
+#hit:hover {
+    background-color: rgba(255, 140, 0, 0.591);
 }
 
 #stay {
     width: 100px;
     height: 50px;
     font-size: 20px;
+    border-radius: 10%;
+    background-color: darkorange;
+    cursor: pointer;
+}
+
+#stay:hover {
+    background-color: rgba(255, 140, 0, 0.591);
 }
 
 #hidden {
-    height: 175px; 
-    width: 125px;
+    height: 140px; 
+    width: 110px;
+}
+
+.restart-btn {
+    border-radius: 10%;
+    height: 25px;
+    background-color: darkorange;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.restart-btn:hover {
+    background-color: rgba(255, 140, 0, 0.591);
 }
 
 #results {
@@ -66,5 +92,5 @@ h2 {
 
 .result {
     position: absolute;
-    right: 80px;
+    right: 200px;
 }
